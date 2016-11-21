@@ -29,7 +29,7 @@ function QuickSort (array, start, end) {
 	while(left < right) {
 	  
     	    				console.log("before moving" + "left: " + array[left] + "  right: " + array[right]+"pivot " + pivot)
-	  	while(array[left] <= pivot && left < right)
+	  	while(array[left] <= pivot && left < right)  //have to use <=, cause left index could pass through pivot's index
 	      left++
 	    while(array[right] >= pivot && left < right)
 	      right--
@@ -45,7 +45,6 @@ function QuickSort (array, start, end) {
 	  	    right--
 	  	              		console.log("after  swap: " + array)
 	  	 }
-  	      
     }
         
     //make sure only pivot in the left array and dividing point also in the left small array and vise verse
