@@ -1,13 +1,6 @@
-/**************************************************
-Name: Breadth First Search for Binary Tree
-Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
-Note: Using a queue to manage FIFO BFS machanism
-
-
-**************************************************/
-
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 class Node {
 	int data;
@@ -21,9 +14,16 @@ class Node {
 	}
 }
 
-public class BFS_BT {
+class BinaryTree {
+	/**************************************************
+	Name: Breadth First Search for Binary Tree
+	Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
+	Note: Using a queue to manage FIFO BFS machanism
 
-	public void levelOrderQueue(Node root) {
+
+	**************************************************/
+
+	public void BFS(Node root) {
 		Queue<Node> q = new LinkedList<Node>();
 		if (root == null)
 			return;
@@ -38,31 +38,13 @@ public class BFS_BT {
 		}
 	}
 
-	public static void main(String[] args) throws java.lang.Exception {
-		Node root = new Node(5);
-		root.left = new Node(10);
-		root.right = new Node(15);
-		root.left.left = new Node(20);
-		root.left.right = new Node(25);
-		root.right.left = new Node(30);
-		root.right.right = new Node(35);
-
-		BFS_BT i = new BFS_BT();
-		System.out.println("Breadth First Search : ");
-		i.levelOrderQueue(root);
-	}
-}
+	/**************************************************
+	Name: Depth First Search for Binary Tree
+	Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
+	Note: Using a stack data structure as a buffer to manage BFS mechanism
 
 
-/**************************************************
-Name: Depth First Search for Binary Tree
-Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
-Note: Using a stack data structure as a buffer to manage BFS mechanism
-
-
-**************************************************/
-
-public class DFS_BT {
+	**************************************************/
 	public void DFS(Node root) {
 		Stack<Node> s = new Stack<Node>();
 		s.add(root);
@@ -73,30 +55,151 @@ public class DFS_BT {
 			System.out.print(" " + x.data);
 		}
 	}
-	public static void main(String args[]){
-		Node root = new Node(1);
-		root.left = new Node(2);
-		root.left.left = new Node(4);
-		root.left.right = new Node(5);
-		root.right = new Node(3);
-		root.right.left = new Node(6);
-		root.right.right = new Node(7);
-		
-		DFS_BT b = new DFS_BT();
-		System.out.println("Depth-First-Search : ");
-		b.DFS(root);
+
+
+
+
+	/***********************************************
+	3. maxDepth() Solution (Java)
+	***********************************************
+	 Returns the max root-to-leaf depth of the tree. 
+	 Uses a recursive helper that recurs down to find 
+	 the max depth. 
+	***********************************************/ 
+	public int FindMaxDepth(Node root) { 
+	    return maxDepth(root); 
+	}
+
+	private int maxDepth(Node node) { 
+	  if (node==null) { 
+	    return(0); 
+	  } 
+	  else { 
+	    int lDepth = maxDepth(node.left); 
+	    int rDepth = maxDepth(node.right);
+
+	    // use the larger + 1 
+	    return(Math.max(lDepth, rDepth) + 1); //plus this level
+	  } 
+	} 
+
+
+	/***********************************************
+	4. maxValue() Solution (Java)
+	***********************************************
+	 Returns the max value in a non-empty binary search tree. 
+	 1> Uses a helper method that iterates to the left to find 
+	 the min value. 
+	 2> Usea recursive method that goes all the way down the right-most node.
+	 Since Binary Search Trea is always that larger value is in the right child node.
+	***********************************************/ 
+	public int findMaxValue(Node root) { 
+	 	return maxValue(root); 
+	} 
+    //iteration version
+	
+	private int maxValue(Node node) { 
+		Node current = node;
+		while(current.right != null) {
+			current = current.right;
+		}
+
+		return(current.data);
+	}
+	
+    /*
+	// recursive version
+	private int maxValue(Node node) { 
+		if(node.right == null)
+			return(node.data);
+		return (maxValue(node.right));
+	}
+    */
+
+    /***********************************************
+	5. printInOrderTree() Solution (Java)
+	***********************************************
+	Prints the node values in the "inorder" order. 
+    Uses a recursive helper to do the traversal. 
+    About what is inorder/postorder: http://www.geeksforgeeks.org/618/
+	***********************************************/ 
+    public void printInOrderTree(Node root) { 
+	    inOrderTree(root); 
+	}
+
+	private void inOrderTree(Node root) {
+		if (node == null) return;
+
+		 // left, node itself, right 
+		 printTree(node.left); 
+		 System.out.print(node.data + "  "); 
+		 printTree(node.right); 
+	}
+
+	/***********************************************
+	6. printPostOrderTree() Solution (Java)
+	***********************************************
+	Prints the node values in the "postorder" order. 
+ 	Uses a recursive helper to do the traversal. 
+	***********************************************/ 
+    public void printPostOrderTree(Node root) { 
+	    postOrderTree(root); 
+	}
+
+	private void postOrderTree(Node root) {
+		if (node == null) return;
+
+		 // left, node itself, right 
+		 printTree(node.left); 
+		 printTree(node.right); 
+		 System.out.print(node.data + "  "); 
+		 
+	}
+
+	/***********************************************
+	7. hasPathSum() Solution (Java)
+	***********************************************
+	Prints the node values in the "postorder" order. 
+ 	Uses a recursive helper to do the traversal. 
+	***********************************************/ 
+
+
+
+
+
+	/***********************************************
+	Main Function
+	***********************************************/
+	public static void main(String[] args) throws java.lang.Exception {
+		Node root = new Node(5);
+		root.left = new Node(10);
+		root.right = new Node(15);
+		root.left.left = new Node(20);
+		root.left.right = new Node(25);
+		root.right.left = new Node(30);
+		root.right.right = new Node(35);
+
+		BinaryTree i = new BinaryTree();
+
+		/* BFS */
+		//System.out.println("Breadth First Search : ");
+		//i.BFS(root);
+
+		/* DFS */
+		//System.out.println("Depth-First-Search : ");
+		//i.DFS(root);
+
+		/* Min Value */
+		//System.out.println("Finding maxValue : ");
+		//System.out.println(i.findMaxValue(root));
+
+
 	}
 }
 
-class Node {
-	int data;
-	Node left;
-	Node right;
 
-	public Node(int data) {
-		this.data = data;
-		left = null;
-		right = null;
-	}
-}
+
+
+
+
 
