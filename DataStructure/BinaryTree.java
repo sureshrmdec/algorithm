@@ -1,3 +1,10 @@
+
+/**************************************************
+Name: Java Implementation For Binary Tree
+Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
+Info: http://cslibrary.stanford.edu/110/BinaryTrees.html#java
+
+**************************************************/
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -146,7 +153,7 @@ class BinaryTree {
 	    postOrderTree(root); 
 	}
 
-	private void postOrderTree(Node root) {
+	private void postOrderTree(Node node) {
 		if (node == null) return;
 
 		 // left, node itself, right 
@@ -159,10 +166,24 @@ class BinaryTree {
 	/***********************************************
 	7. hasPathSum() Solution (Java)
 	***********************************************
-	Prints the node values in the "postorder" order. 
- 	Uses a recursive helper to do the traversal. 
+	Given a tree and a sum, returns true if there is a path from the root 
+    down to a leaf, such that adding up all the values along the path 
+    equals the given sum.
+    Strategy: subtract the node value from the sum when recurring down, 
+    and check to see if the sum is 0 when you run out of tree. 
 	***********************************************/ 
+	public boolean hasPathSum(Node node, int sum) {
+		if (node == null) { 
+        	return(sum == 0); 
+        } 
+        else { 
+          // otherwise check both subtrees 
+            int subSum = sum - node.data; 
+            return(hasPathSum(node.left, subSum) || hasPathSum(node.right, subSum)); 
+        } 
+		
 
+	}
 
 
 
@@ -192,6 +213,9 @@ class BinaryTree {
 		/* Min Value */
 		//System.out.println("Finding maxValue : ");
 		//System.out.println(i.findMaxValue(root));
+
+		/* hasPathSum */
+		System.out.println("Tree has path of sum is " + i.hasPathSum(root, 55));
 
 
 	}
