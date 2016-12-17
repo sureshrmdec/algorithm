@@ -92,7 +92,63 @@ console.log(sumFinder([6,4,3,2,1,7], 9)); //true
 console.log(sumFinder([6,4,3,2,1,7], 2)); //falses
 
 
+/***********************************************************
+Largest Sum
+Goal: Find the largest sum of any two elements
+How:  Just find the two largest number and return sum of them
+************************************************************/
+function topSum(arr){
+  
+  var biggest = arr[0],
+    second = arr[1],
+    len = arr.length,
+    i = 2;
 
+  if (len < 2) return null;
+
+  if (biggest < second) {
+    biggest = arr[1];
+    second = arr[0];
+  }
+
+  for (; i < len; i++) {
+
+    if (arr[i] > biggest) {
+      second = biggest;
+      biggest = arr[i];
+    } else if (arr[i] > second) {
+      second = arr[i];
+    }
+
+  }
+
+  return biggest + second;
+  }
+
+  console.log(topSum([6, 4, 3, 2, 1, 7])); //13
+
+}
+        
+console.log(topSum([6,4,3,2,1,7])); //13
+/*************************Using bubble sort***********************************/
+
+function topSum(arr) {
+  len = arr.length;
+  for (let i = 0; i < 3; i++) {
+    for (let j = i; j < arr.length; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr[len - 1] + arr[len - 2];
+}
+
+console.log(topSum([6, 4, 3, 2, 1, 7])); //13
+
+console.log(topSum([2, 4, 9, 1, 3, 6, 4, 8])); //17
 
 
 

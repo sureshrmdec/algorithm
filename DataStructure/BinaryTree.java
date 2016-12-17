@@ -49,8 +49,6 @@ class BinaryTree {
 	Name: Depth First Search for Binary Tree
 	Info: http://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
 	Note: Using a stack data structure as a buffer to manage BFS mechanism
-
-
 	**************************************************/
 	public void DFS(Node root) {
 		Stack<Node> s = new Stack<Node>();

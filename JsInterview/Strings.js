@@ -100,3 +100,35 @@ console.log(isPalindrome('madam'))    //true
 console.log(isPalindrome('toyota'))   //false
 
 
+/***********************************************************
+Find Substring
+Goal: match substring of a sting
+How:  reverse a word and it becomes same as the previous word, it is called palindrome.
+************************************************************/
+function subStringFinder(str, subStr){
+  var idx = 0,
+      i = 0,
+      j = 0,
+      len = str.length,
+      subLen = subStr.length;
+
+  for(; i<len; i++){
+    idx = i;
+    j = 0;
+    while (str[idx] == subStr[j]) {
+
+      if(j == (subStr.length - 1)) 
+        return i;
+      idx++;
+      j++;
+    }
+  }
+
+  return -1;
+}
+
+console.log(subStringFinder('abbcdabbbbbck', 'ab')) //0
+console.log(subStringFinder('abbcdabbbbbck', 'bck')) //10
+
+console.log(subStringFinder('abbcdabbbbbck', 'bbbck'))  //8
+console.log(subStringFinder('sadbwesfwaeqherfdxzv', 'aeqhe'))  //9
