@@ -56,17 +56,17 @@ bst.push(5);
 */
 
 /**********************************************************************
-Name: Javascript Implementation For Binary Search Tree
-Info: https://khan4019.github.io/front-end-Interview-Questions/bst.html
-Basic Functions
+DepthFirstTraversal
 **********************************************************************/
 
 function DepthFirstTraversal(node){
-  if(node){
+  if(node)
     console.log(node.value);
-    dfs(node.left);
-    dfs(node.right);
-  }
+
+  if(node.left)
+  	DepthFirstTraversal(node.left);
+  if(node.right)
+  	DepthFirstTraversal(node.right);
 }
 
 
