@@ -1,4 +1,5 @@
-const LinkedList = import('./LinkedList');
+"use strict"
+const LinkedList = require('./LinkedList');
 
 function Stack() {
 	this.list = new LinkedList();
@@ -30,7 +31,20 @@ Stack.prototype.pop = function() {
   }
   const peek = this.peek();
   this.list.remove(peek);
-  return peekNode;
+  return peek;
 }
 
+Stack.prototype.print = function() {
+  while(!this.isEmpty()) 
+    console.log(this.pop());
+}
 module.exports = Stack;
+
+
+//testing
+let testStack = new Stack();
+testStack.push(3);
+testStack.push(5);
+testStack.push(4);
+testStack.push(2);
+testStack.print();

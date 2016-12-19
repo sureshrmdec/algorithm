@@ -1,3 +1,4 @@
+"use strict"
 function Node(data) {
     this.next = null;
     this.data = data;
@@ -42,7 +43,7 @@ LinkedList.prototype.remove = function(data) {
     else {
       this.start = null;
       this.end = null;
-      length--;
+      this.length--;
       return;
     }
   }    
@@ -79,6 +80,10 @@ LinkedList.prototype.remove = function(data) {
   
 };
 
+module.exports = LinkedList;
+
+/*
+
 //for testing
 LinkedList.prototype.print = function() { 
   console.log("-------------"+this.length+"-------------")
@@ -98,7 +103,7 @@ LinkedList.prototype.restart = function() {
   this.length = 0;
 }
 
-module.exports = LinkedList;
+
 
 
 //begin testing
@@ -178,3 +183,4 @@ testlist.remove(5);
 testlist.print();
 
 
+*/
