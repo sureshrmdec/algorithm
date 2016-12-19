@@ -79,8 +79,6 @@ LinkedList.prototype.remove = function(data) {
   
 };
 
-
-
 //for testing
 LinkedList.prototype.print = function() { 
   console.log("-------------"+this.length+"-------------")
@@ -99,10 +97,14 @@ LinkedList.prototype.restart = function() {
   this.end = null;
   this.length = 0;
 }
-let testlist = new LinkedList();
+
+module.exports = LinkedList;
 
 
 //begin testing
+let testlist = new LinkedList();
+
+
 console.log("general test");
 testlist.restart();
 testlist.add(3);
