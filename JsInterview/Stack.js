@@ -9,10 +9,6 @@ Stack.prototype.isEmpty = function() {
   return this.list.length === 0;
 }
 
-Stack.prototype.peek = function() {
-  return this.isEmpty() ? null : this.getNext();
-}
-
 Stack.prototype.getNext = function() {
 	return this.list.end.data;
 }
@@ -29,18 +25,19 @@ Stack.prototype.pop = function() {
   if (this.isEmpty()) {
     throw new Error('The stack is empty');
   }
-  const peek = this.peek();
+  const peek = this.isEmpty() ? null : this.getNext();
   this.list.remove(peek);
   return peek;
 }
 
 Stack.prototype.print = function() {
-  while(!this.isEmpty()) 
-    console.log(this.pop());
+  this.list.print();
 }
+
+//for test
 module.exports = Stack;
 
-
+/*
 //testing
 let testStack = new Stack();
 testStack.push(3);
@@ -48,3 +45,13 @@ testStack.push(5);
 testStack.push(4);
 testStack.push(2);
 testStack.print();
+testStack.pop();
+testStack.pop();
+testStack.print();
+testStack.pop();
+testStack.pop();
+testStack.print();
+*/
+
+
+

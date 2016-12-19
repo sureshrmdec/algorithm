@@ -82,9 +82,10 @@ LinkedList.prototype.remove = function(data) {
 
 module.exports = LinkedList;
 
-/*
 
 //for testing
+
+
 LinkedList.prototype.print = function() { 
   console.log("-------------"+this.length+"-------------")
   let current = this.start;
@@ -103,9 +104,7 @@ LinkedList.prototype.restart = function() {
   this.length = 0;
 }
 
-
-
-
+/*
 //begin testing
 let testlist = new LinkedList();
 
