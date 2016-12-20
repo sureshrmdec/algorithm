@@ -127,13 +127,13 @@ function topSum(arr){
 
   console.log(topSum([6, 4, 3, 2, 1, 7])); //13
 
-}
+
         
 console.log(topSum([6,4,3,2,1,7])); //13
 /*************************Using bubble sort***********************************/
 
 function topSum(arr) {
-  len = arr.length;
+  let len = arr.length;
   for (let i = 0; i < 3; i++) {
     for (let j = i; j < arr.length; j++) {
       if (arr[j] > arr[j + 1]) {

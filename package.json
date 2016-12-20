@@ -1,0 +1,28 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanchowsz/algorithm.git"
+  },
+  "keywords": [
+    "algorithm",
+    "test",
+    "javascript"
+  ],
+  "author": "evan chow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanchowsz/algorithm/issues"
+  },
+  "homepage": "https://github.com/evanchowsz/algorithm#readme",
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "jasmine-node": "^1.14.5"
+  }
+}

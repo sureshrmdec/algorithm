@@ -33,7 +33,7 @@ function MergeSort (array) {
 		}
 	}
 
-	return result.concat(left.length ? left : right);;
+	return result.concat(left.length ? left : right);
 }
 
 console.log(MergeSort(test_array));

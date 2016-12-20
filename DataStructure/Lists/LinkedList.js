@@ -14,6 +14,10 @@ LinkedList.prototype.add = function(data) {
     if (data === undefined) {
         throw new Error('data must be valid to add');
     }
+    
+    if (data === null) {
+      throw new Error('data cannot be null');
+    }
 
     const newNode = new Node(data);
 
