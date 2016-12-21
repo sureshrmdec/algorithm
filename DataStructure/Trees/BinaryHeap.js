@@ -1,4 +1,5 @@
 "use strict"
+
 function BinaryHeap(data) {
   this.array = [];
 
@@ -19,7 +20,7 @@ function BinaryHeap(data) {
 
 function shouldSwap(data, targetData) {
   //minHeap
-  if(data < targetData)
+  if (data < targetData)
     return true;
   /*
   //maxHeap
@@ -71,6 +72,15 @@ function bubbleDown(parentIndex, parentData) {
     const leftChildIndex = this.getLeftChild(parentIndex);
     const rightChildIndex = this.getRightChild(parentIndex);
 
+    trySwap(leftChildIndex, this.array, this.shouldSwap);
+    trySwap(rightChildIndex, this.array, this.shouldSwap);
+
+    if (targetIndex !== parentIndex) {
+      this.array[parentIndex] = targetData;
+      this.array[targetIndex] = parentData;
+      this.bubbleDown(targetIndex, parentData);
+    }
+
     function trySwap(index, array, shouldSwap) {
       if (index < array.length) {
         const data = array[index];
@@ -80,15 +90,6 @@ function bubbleDown(parentIndex, parentData) {
           targetData = data;
         }
       }
-    }
-
-    trySwap(leftChildIndex, this.array, this.shouldSwap);
-    trySwap(rightChildIndex, this.array, this.shouldSwap);
-
-    if (targetIndex !== parentIndex) {
-      this.array[parentIndex] = targetData;
-      this.array[targetIndex] = parentData;
-      this.bubbleDown(targetIndex, parentData);
     }
   }
 }
@@ -116,14 +117,13 @@ BinaryHeap.prototype = {
 
 //testsing
 BinaryHeap.prototype.print = function() {
-    console.log(this.array);
+  console.log(this.array);
 }
 
 module.exports = BinaryHeap;
 
 
 //begin test
-let testArray1 = [2,4,7,9,1,3,5,0,6,8]
+let testArray1 = [2, 4, 7, 9, 1, 3, 5, 0, 6, 8]
 let testBinaryHeap = new BinaryHeap(testArray1);
 testBinaryHeap.print();
-
