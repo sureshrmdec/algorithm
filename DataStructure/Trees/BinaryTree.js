@@ -81,9 +81,9 @@ module.exports = BinaryTree;
 
 
 //for testing
-
-let bst = new BinarySearchTree();
 /*
+let bst = new BinarySearchTree();
+
 bst.push(0);
 bst.push(5);
 bst.push(3);
@@ -92,11 +92,10 @@ bst.push(6);
 bst.push(2);
 bst.push(4);
 bst.push(1);
-bst.push(7);
-*/
+bst.push(7); 
+
 //depthFirstSearch(bst.root, (val)=>console.log(val));
 let binaryTree = new BinaryTree();
-binaryTree.breadthFirstSearch(bst.root, (val) => console.log(val));
 
 //for testing
 const testArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
@@ -106,3 +105,4 @@ console.log("---------------------------------------------");
 binaryTree.depthFirstTranversal(bst.root, (val) => console.log(val));
 console.log("---------------------------------------------");
 binaryTree.inOrderTranversal(bst.root, (val) => console.log(val));
+*/

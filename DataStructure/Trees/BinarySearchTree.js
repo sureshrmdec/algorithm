@@ -176,10 +176,12 @@ bst.push_recursive(4);
 bst.push_recursive(1);
 bst.push_recursive(7);
 */
+
 //for testing
 const testArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 bst.createBST(testArray);
 console.log("---------------------------------------------");
 //bst.BinarySearchTreeSearch(5);
 //console.log(bst.root);
-//inOrderTranversal(bst.root, (val) => console.log(val));
+let binaryTree = new BinaryTree();
+binaryTree.inOrderTranversal(bst.root, (val) => console.log(val));
