@@ -153,35 +153,80 @@ function BinarySearchTree() {
         tranversal(node.right);
     }
   }
-}
+
+  /**********************************************************************
+    Validate a Binary Search Tree. Leetcode No.098
+    **********************************************************************/
+  this.isValidBST = function(root) {
+    if (root === null || root === undefined)
+      return true;
+    if (root.left === null && root.right === null)
+      return true;
+
+    return validBST(root, null, null);
+
+    function validBST(node, min, max) {
+      //console.log("test node: " + node.val + " min: " + min + " max:" + max);
+      //Base Case
+      if (min === null)
+        min = Number.MIN_SAFE_INTEGER;
+      if (max === null)
+        max = Number.MAX_SAFE_INTEGER;
+      //both child nodes are null
+      if (node.left === null && node.right === null)
+        return true;
+      //only left node is null
+      else if (node.left === null && node.right !== null) {
+        if (node.right.val > node.val && node.right.val > min && node.right.val < max)
+          return validBST(node.right, node.val, max);
+        else
+          return false;
+      }
+      //only right node is null
+      else if (node.left !== null && node.right === null) {
+        if (node.left.val < node.val && node.left.val > min && node.left.val < max)
+          return validBST(node.left, min, node.val);
+        else
+          return false;
+      }
+      else {
+        if (node.left.val < node.val && node.right.val > node.val &&
+          node.left.val > min && node.left.val < max && node.right.val > min && node.right.val < max)
+        //left child nodes should be all smaller than node.val, right child nodes should all larger than node.val
+          return validBST(node.left, min, node.val) && validBST(node.right, node.val, max);
+        else
+          return false;
+      }
+    }
+  }
 
 
 
 
 
-module.exports = BinarySearchTree;
+  module.exports = BinarySearchTree;
 
 
 
-//for testing
-let bst = new BinarySearchTree();
-/*
-bst.push_recursive(0);
-bst.push_recursive(5);
-bst.push_recursive(3);
-bst.push_recursive(9);
-bst.push_recursive(6);
-bst.push_recursive(2);
-bst.push_recursive(4);
-bst.push_recursive(1);
-bst.push_recursive(7);
-*/
+  //for testing
+  let bst = new BinarySearchTree();
+  /*
+  bst.push_recursive(0);
+  bst.push_recursive(5);
+  bst.push_recursive(3);
+  bst.push_recursive(9);
+  bst.push_recursive(6);
+  bst.push_recursive(2);
+  bst.push_recursive(4);
+  bst.push_recursive(1);
+  bst.push_recursive(7);
+  */
 
-//for testing
-const testArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-bst.createBST(testArray);
-console.log("---------------------------------------------");
-//bst.BinarySearchTreeSearch(5);
-//console.log(bst.root);
-let binaryTree = new BinaryTree();
-binaryTree.inOrderTranversal(bst.root, (val) => console.log(val));
+  //for testing
+  const testArray = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+  bst.createBST(testArray);
+  console.log("---------------------------------------------");
+  //bst.BinarySearchTreeSearch(5);
+  //console.log(bst.root);
+  let binaryTree = new BinaryTree();
+  binaryTree.inOrderTranversal(bst.root, (val) => console.log(val));
