@@ -1,4 +1,4 @@
-package OA1;
+package SocialOA;
 import java.util.*;
 // Amazon OA
 //http://www.lintcode.com/en/problem/valid-parentheses/#
