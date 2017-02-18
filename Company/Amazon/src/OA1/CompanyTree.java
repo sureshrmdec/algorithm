@@ -11,7 +11,6 @@ class Node { //这个是题目给好的
         children = new ArrayList<Node>();
     }
 }
-//这个类是自己写的,要不不好找,两个成员变量分别是当前的总和和人数
 class SumCount {
     int sum;
     int count;
