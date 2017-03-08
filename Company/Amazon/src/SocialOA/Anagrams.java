@@ -1,6 +1,6 @@
 package SocialOA;
 
-import java.util.*; //这次差点儿忘了这个
+import java.util.*;
 
 //http://www.lintcode.com/en/problem/anagrams/#
 

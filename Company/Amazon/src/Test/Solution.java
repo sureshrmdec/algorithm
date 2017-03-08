@@ -1,45 +1,81 @@
 package Test;
-
 /**
- * Created by MikeZhou1 on 2/16/17.
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
  */
-public class Solution {
+
+import java.util.*;
+class Solution {
     /**
-     * @param obstacleGrid: A list of lists of integers
-     * @return: An integer
+     * @param colors: A list of integer
+     * @param k: An integer
+     * @return: nothing
      */
-    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        if (obstacleGrid.length == 0 || obstacleGrid == null)
-            return 0;
-
-        int row = obstacleGrid.length;
-        int col = obstacleGrid[0].length;
-
-        int[][] sum = new int[row][col];
-
-        for (int i = 0; i < row; i++) {
-            if(obstacleGrid[i][col-1] == 1)
-                sum[i][col-1] = 0;
-            else
-                sum[i][col-1] = 1;
+    public static void sortColors2(int[] colors, int k) {
+        if (colors == null || colors.length == 0) {
+            return;
         }
+        quickSort(colors, 0, colors.length - 1);
+    }
 
-        for (int i = 0; i < col; i++) {
-            if(obstacleGrid[row-1][i] == 1)
-                sum[row-1][i] = 0;
-            else
-                sum[row-1][i] = 1;
-        }
+    private static void quickSort(int[] nums, int left, int right) {
+        if (left >= right)
+            return;
 
-        for (int i = 1; i < col; i++) {
-            for (int j  = 1; j < row; j++) {
-                if (obstacleGrid[i][j] == 1)
-                    sum[i][j] = 0;
-                else
-                    sum[i][j] = sum[i-1][j] + sum[j-1][i];
+        int index = partition(nums, left, right);
+        //if (left < index - 1)
+            quickSort(nums, left, index - 1);
+        //if (index < right)
+            quickSort(nums, index, right);
+    }
+
+    private static int partition(int[] nums, int left, int right) {
+        int index = (left + right) / 2;
+        int pivot = nums[index];
+
+        while (left <= right) {
+            while (nums[left] < pivot) {
+                left++;
             }
+
+            while (nums[right] > pivot) {
+                right--;
+            }
+
+            if (left <= right) {
+                int temp;
+                temp = nums[left];
+                nums[left] = nums[right];
+                nums[right] = temp;
+                left++;
+                right--;
+            }
+
         }
 
-        return sum[row-1][col-1];
+        return left;
+    }
+
+    private static void print(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.print("\n");
+    }
+
+    public static void main(String[] args) {
+        int k = 4;
+        int[] nums = {3,2,3,3,4,3,3,2,4,4,1,2,1,1,1,3,4,3,4,2};
+        //int[] nums = {2,3,8,5,4,9,1,7};
+        sortColors2(nums, k);
+        print(nums);
+
     }
 }

@@ -43,10 +43,6 @@ public class OrderDependency {
                 inDegreeMap.put(pos, 1);
             }
 
-            if (!inDegreeMap.containsKey(pre)) {
-                inDegreeMap.put(pre, 0);
-            }
-
             if (NeighborListMap.containsKey(pre)) {
                 NeighborListMap.get(pre).add(pos);
             } else {
@@ -60,7 +56,7 @@ public class OrderDependency {
 
         //put the node with 0 inDegree into the inDegreeMap
         for(Order key : inDegreeMap.keySet()) {
-            if (inDegreeMap.get(key) == 0) {
+            if (!inDegreeMap.containsKey(key)) {
                 q.offer(key);
             }
         }

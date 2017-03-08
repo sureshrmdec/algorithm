@@ -18,13 +18,13 @@ class Node {
 }
 
 public class Maze {
-    private final static int[] dx = {-1, 0, 0, 1};
-    private final static int[] dy = {0, 1, -1, 0};
-    public static int findMinSteps(int[][] matrix, int desX, int desY) {
+    private final static int[] dx = {-1, 0, 0, 1};//row
+    private final static int[] dy = {0, 1, -1, 0};//col
+    public static int findMinSteps(int[][] matrix, int desRow, int desCol) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return 0;
-        if (matrix[0][0] == 9)
-            return 1;
+        if (desRow == 0 && desCol == 0)
+            return 0;
 
         int row = matrix.length, col = matrix[0].length;
         boolean[][] visited = new boolean[row][col];
@@ -43,7 +43,7 @@ public class Maze {
                 int adjY = cur.y + dy[i];
                 if ((adjX >= 0) && (adjX < row) && (adjY >= 0) && (adjY < col) && !visited[adjX][adjY]
                         && matrix[adjX][adjY] != 1) {
-                    if (adjX == desX && adjY == desY) {
+                    if (adjX == desRow && adjY == desCol) {
                         return ++cur.val;
                     } else {
                         Node adjacent = new Node(cur.x + dx[i], cur.y + dy[i], cur.val + 1);

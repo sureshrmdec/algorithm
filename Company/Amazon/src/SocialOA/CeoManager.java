@@ -16,6 +16,7 @@ class Employee {
 public class CeoManager {
     /*
     //version 1 : assume e1 and e2 exists in the tree, and e1 could not be the parent of e2, vise verse.
+    private Boolean foundCeo = false;
     Employee findLeastCommon(Employee ceo, Employee e1, Employee e2) {
         if (ceo == null || ceo == e1 || ceo == e2)
             return root;
@@ -26,13 +27,17 @@ public class CeoManager {
         for (Employee child : ceo.children) {
             Employee res = findLeastCommon(child, e1, e2);
             if (res != null) {
+                if (foundCeo)
+                    return res;
                 potentialChild = res;
                 count++;
             }
         }
 
-        if (count == 2)
+        if (count == 2) {
+            foundCeo = true;
             return ceo;
+        }
         else if (count == 1)
             return potentialChild;
         else
@@ -65,8 +70,10 @@ public class CeoManager {
         int count = 0;
 
         for (Employee child : ceo.children) {
-            Employee res = findLeastCommon(child, e1, e2);
+            Employee res = helper(child, e1, e2, found);
             if (res != null) {
+                if (found[0])
+                    return res;
                 potentialChild = res;
                 count++;
             }
@@ -87,7 +94,7 @@ public class CeoManager {
             return potentialChild;
         }
         //case 4: general case, found one node in cur node
-        else if (ceo == e1 || ceo == e2)
+        else if (count == 0 && (ceo == e1 || ceo == e2))
             return ceo;
         else
             return null;
