@@ -12,70 +12,63 @@ package Test;
  */
 
 import java.util.*;
-class Solution {
+
+class Pair {
+    public int x, y, sum;
+    public Pair(int x, int y, int val) {
+        this.x = x;
+        this.y = y;
+        this.sum = val;
+    }
+}
+class PairComparator implements Comparator<Pair> {
+    public int compare(Pair a, Pair b) {
+        return a.sum - b.sum;
+    }
+}
+
+public class Solution {
     /**
-     * @param colors: A list of integer
-     * @param k: An integer
-     * @return: nothing
+     * @param A an integer arrays sorted in ascending order
+     * @param B an integer arrays sorted in ascending order
+     * @param k an integer
+     * @return an integer
      */
-    public static void sortColors2(int[] colors, int k) {
-        if (colors == null || colors.length == 0) {
-            return;
-        }
-        quickSort(colors, 0, colors.length - 1);
-    }
+    public static int kthSmallestSum(int[] A, int[] B, int k) {
+        int[] dx = new int[]{0, 1};
+        int[] dy = new int[]{1, 0};
+        boolean[][] hash = new boolean[A.length][B.length];
+        PriorityQueue<Pair> minHeap = new PriorityQueue<Pair>(k, new PairComparator());
+        minHeap.add(new Pair(0, 0, A[0] + B[0]));
 
-    private static void quickSort(int[] nums, int left, int right) {
-        if (left >= right)
-            return;
-
-        int index = partition(nums, left, right);
-        //if (left < index - 1)
-            quickSort(nums, left, index - 1);
-        //if (index < right)
-            quickSort(nums, index, right);
-    }
-
-    private static int partition(int[] nums, int left, int right) {
-        int index = (left + right) / 2;
-        int pivot = nums[index];
-
-        while (left <= right) {
-            while (nums[left] < pivot) {
-                left++;
+        for(int i = 0; i < k - 1; i ++){
+            Pair cur = minHeap.poll();   System.out.print("cur pair sum " + cur.sum + "\n");
+            for(int j = 0; j < 2; j ++){
+                int next_x = cur.x + dx[j];
+                int next_y = cur.y + dy[j];
+                Pair next_Pair = new Pair(next_x, next_y, 0);
+                if(next_x < A.length && next_y < B.length &&  !hash[next_x][next_y]){
+                    hash[next_x][next_y] = true;
+                    next_Pair.sum = A[next_x] + B[next_y];
+                    minHeap.add(next_Pair);  System.out.print("add pair sum" + next_Pair.sum + "\n");
+                }
             }
 
-            while (nums[right] > pivot) {
-                right--;
+            for (Pair m : minHeap) {
+
+                System.out.print("heap value" + m.sum + "\n");
             }
-
-            if (left <= right) {
-                int temp;
-                temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
-                left++;
-                right--;
-            }
-
         }
-
-        return left;
-    }
-
-    private static void print(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.print("\n");
+        return minHeap.peek().sum;
     }
 
     public static void main(String[] args) {
-        int k = 4;
-        int[] nums = {3,2,3,3,4,3,3,2,4,4,1,2,1,1,1,3,4,3,4,2};
-        //int[] nums = {2,3,8,5,4,9,1,7};
-        sortColors2(nums, k);
-        print(nums);
+        int[] A = {1, 7, 11, 13, 14, 16};
+        int[] B = {2, 4, 6, 8, 9, 10, 14};
+        int k = 6;
+        System.out.print(kthSmallestSum(A, B, k));
+        return;
 
     }
+
 }

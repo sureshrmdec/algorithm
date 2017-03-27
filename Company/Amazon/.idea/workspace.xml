@@ -32,18 +32,32 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SocialOA/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="570">
               <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+              <folding>
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#1021#1027#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XZGmae.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SocialOA/XZGmae.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -53,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/OA1/CloseTwoSum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -62,21 +76,21 @@
       <file leaf-file-name="HighFiveScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OA1/HighFiveScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="795">
+              <caret line="57" column="5" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KClosetPoints.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KClosetPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OA1/KClosetPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="603">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
               <folding>
-                <element signature="e#341#569#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,10 +101,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="810">
               <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-              <folding>
-                <element signature="e#377#378#0" expanded="false" />
-                <element signature="e#416#417#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +111,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#720#721#0" expanded="false" />
-                <element signature="e#776#777#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,10 +121,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1335">
               <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-              <folding>
-                <element signature="e#1230#1231#0" expanded="false" />
-                <element signature="e#1286#1287#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,22 +247,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Amazon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Amazon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OA1" />
+              <option name="myItemId" value="SocialOA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,40 +264,12 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OA1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KClosetPoints.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Amazon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Amazon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OA1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HighFiveScore.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -601,16 +562,18 @@
       <updated>1486842192500</updated>
       <workItem from="1486842198092" duration="42720000" />
       <workItem from="1487091147006" duration="74958000" />
-      <workItem from="1488577509539" duration="4458000" />
+      <workItem from="1488577509539" duration="4459000" />
+      <workItem from="1490291883763" duration="351000" />
+      <workItem from="1490455578274" duration="2173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122136000" />
+    <option name="totallyTimeSpent" value="124661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1243" height="777" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -618,10 +581,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14109589" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22335766" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61167884" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22481266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -655,6 +618,93 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/OA1/MST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocialOA/CeoManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocialOA/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#1021#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OA1/CloseTwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OA1/HighFiveScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OA1/KClosetPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OA1/OrderDependency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocialOA/MovieNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OA1/MST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SocialOA/CeoManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
@@ -667,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +732,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#1021#1027#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,10 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,10 +752,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#720#721#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,10 +760,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="e#1230#1231#0" expanded="false" />
-            <element signature="e#1286#1287#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,10 +798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1830">
           <caret line="145" column="18" lean-forward="true" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="628" column="0" lean-forward="false" selection-start-line="628" selection-start-column="0" selection-end-line="628" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,19 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SocialOA/XZGmae.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SocialOA/Anagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,10 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="e#1230#1231#0" expanded="false" />
-            <element signature="e#1286#1287#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,10 +926,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -933,25 +955,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#720#721#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SocialOA/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="570">
           <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -959,15 +970,15 @@
     <entry file="file://$PROJECT_DIR$/src/OA1/CloseTwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OA1/HighFiveScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="795">
+          <caret line="57" column="5" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -976,17 +987,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="142" column="8" lean-forward="false" selection-start-line="142" selection-start-column="8" selection-end-line="142" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OA1/KClosetPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="603">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
           <folding>
-            <element signature="e#341#569#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SocialOA/XZGmae.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#1021#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
